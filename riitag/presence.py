@@ -15,19 +15,9 @@ def format_presence(riitag_info: RiitagInfo):
     title = RiitagTitle(last_played.game_id)
 
     return {
-        'details': f'Playing {title.name}!',
-        'state': f'https://gametdb.com/{last_played.console.title()}/{last_played.game_id}',
+        'details': f'Playing {title.name}',
         'start': start_timestamp,
-
-        'large_image': 'console_wii',
-        'large_text': f'Playing on {last_played.console.title()}',
-
-        'small_image': 'logo',
-        'small_text': 'tag.rc24.xyz',
-
-        'party_id': 'joinmypartyplsss',
-        'join': 'hahajoinsecretgobrrrr',
-        'match': 'vroomvroom'
+        'large_image': 'wiiimg'
     }
 
 
